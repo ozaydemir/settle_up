@@ -1,0 +1,14 @@
+{
+  "name": "merch",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Tyler Craft <tyler@blueacorn.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "normalize-css": "^4.1.1"
+  }
+}

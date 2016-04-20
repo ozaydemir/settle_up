@@ -1,0 +1,46 @@
+@import "layout/nav";
+
+html,
+body {
+	height: 100%;
+}
+
+.sidebar-layout {
+	display: flex;
+}
+
+.sidebar-container {
+	order: 0;
+	width: 110px;
+	background: $brand-dark;
+
+	ul {
+		@include navigation-list();
+	}
+}
+
+.page-wrapper {
+	order: 1;
+	width: calc(100% - 110px);
+}
+
+
+.logo-container {
+	
+	background-color: $brand-primary;
+	transition: background-color 150ms ease-in-out;
+
+	.logo {
+		@include hide-text();
+		@include svg-image('settle-logo');
+		background-repeat: no-repeat;
+		background-position: 40px 19px;
+		display: block;
+		height: 76px;
+		cursor: pointer;
+	}
+
+	&:hover {
+		background-color: $brand-primary-hover;
+	}
+}

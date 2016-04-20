@@ -1,0 +1,20 @@
+header {
+	background: $module-background;
+	height: 76px;
+
+	h1 {
+		margin: 0;
+		padding-right: 214px;
+	}
+
+	.control-container {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.notify-icon .icon {
+		width: 20px;
+		height: 27px;
+	}
+}

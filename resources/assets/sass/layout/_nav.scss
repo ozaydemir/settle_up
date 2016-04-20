@@ -1,0 +1,40 @@
+@mixin iconColors($iconColor){
+	use.dashboard { color: $iconColor; }
+	use.products { color: $iconColor; }
+	use.shows { color: $iconColor; }
+	use.reports { color: $iconColor; }
+}
+
+.sidebar-nav {
+
+	margin-top: 27px;
+
+	a {
+		
+		@include animate(background-color);
+		display: block;
+		text-align: center;
+		color: $text-color;
+		text-decoration: none;
+		padding: 14px 0 15px;
+
+		.icon {
+			display: block;
+			width: 18px;
+			height: 18px;
+			margin: 0 auto 6px;
+		}
+
+		@include iconColors($text-color);
+
+		&.current-page {
+			@include iconColors($brand-primary);
+			color: $brand-light;
+		}
+
+		&:hover {
+			background: lighten($brand-dark, 5%);
+		}
+	}
+}
+

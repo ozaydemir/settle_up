@@ -1,0 +1,22 @@
+/*!
+ * Preboot v2
+ * LESS version by @mdo, http://getpreboot.com
+ *
+ * Open sourced under MIT license by @mustangostang.
+ * Some variables and mixins from Bootstrap (Apache 2 license).
+ */
+
+
+//
+// Typography
+// --------------------------------------------------
+$font-family-sans-serif:  'Open Sans', sans-serif;
+$font-family-base:        $font-family-sans-serif;
+
+$font-size-base:          12px;
+$font-size-large:         $font-size-base * 1.25; // ~15px
+
+$line-height-base:        1.4;
+
+$headings-font-family:    inherit; // empty to use BS default, @font-family-base
+$headings-font-weight:    700;
