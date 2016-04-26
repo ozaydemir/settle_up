@@ -1,0 +1,23 @@
+.toolbar-container {
+	@include clearfix();
+
+	.filter-container {
+		float: left;
+
+		.filter-link {
+			@include h3();
+			text-decoration: none;
+			font-weight: 200;
+			color: $text-color;
+
+			&.active {
+				color: $brand-primary;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.action-tools-container {
+		float: right;
+	}
+}

@@ -1,0 +1,40 @@
+.data-grid {
+	width: 100%;
+	border-collapse: collapse;
+	@include module-shadow();
+
+	th,
+	td {
+		padding: 12px 15px 14px;
+
+		&:first-child {
+			padding-left: 30px;
+			// width: 67px;
+		}
+
+		&:last-child {
+			padding-right: 30px;
+		}
+	}
+
+	th {
+		background: $brand-primary;
+		color: $white;
+		font-weight: 400;
+		font-size: 13px;
+		text-align: left;
+	}
+
+	td {
+		padding: 9px 15px 10px;
+	}
+
+	tr {
+		background: $white;
+		border-bottom: 1px solid $module-border-color;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+}

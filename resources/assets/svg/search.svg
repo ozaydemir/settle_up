@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Shows" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="normal" font-family="SSGizmo, SS Gizmo" line-spacing="18" font-size="16">
+        <g transform="translate(-870.000000, -128.000000)" id="Search" fill="#80858C">
+            <g transform="translate(854.000000, 115.000000)">
+                <text id="search">
+                    <tspan x="15" y="28">search</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

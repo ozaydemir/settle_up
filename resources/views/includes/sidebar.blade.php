@@ -5,7 +5,7 @@
 	<nav class="sidebar-nav">
 		<ul>
 			<li>
-				<a href="#" class="current-page">
+				<a href="{{ URL::to('/') }}" class="{{ set_active('/') }}">
 					<svg class="icon">
 		                <use xlink:href="/svg/sprite.svg#home" class="dashboard"></use>
 		            </svg>
@@ -13,7 +13,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="{{ URL::to('products') }}" class="{{ set_active('products') }}">
 					<svg class="icon">
 		                <use xlink:href="/svg/sprite.svg#cart" class="products"></use>
 		            </svg>
@@ -21,7 +21,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="{{ URL::to('shows') }}" class="{{ set_active('shows') }}">
 					<svg class="icon">
 		                <use xlink:href="/svg/sprite.svg#location" class="shows"></use>
 		            </svg>
@@ -29,7 +29,15 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="{{ URL::to('promoters') }}" class="{{ set_active('promoters') }}">
+					<svg class="icon">
+		                <use xlink:href="/svg/sprite.svg#promoter" class="promoters"></use>
+		            </svg>
+					Promoters
+				</a>
+			</li>
+			<li>
+				<a href="{{ URL::to('reports') }}" class="{{ set_active('reports') }}">
 					<svg class="icon">
 		                <use xlink:href="/svg/sprite.svg#barchart" class="reports"></use>
 		            </svg>

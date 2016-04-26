@@ -4,17 +4,56 @@ header {
 
 	h1 {
 		margin: 0;
-		padding-right: 214px;
+		padding: 17px 214px 0 0;
+		text-align: center;
 	}
 
 	.control-container {
+		@include clearfix();
 		position: absolute;
 		right: 0;
 		top: 0;
+
+		.button {
+			float: left;
+			margin: 20px 0;
+		}
+
+		.notify-container {
+			position: relative;
+			float: right;
+			margin: 10px 21px 0 15px;
+		}
 	}
 
 	.notify-icon .icon {
 		width: 20px;
 		height: 27px;
+	}
+
+	.notify-icon {
+		display: block;
+		text-decoration: none;
+		padding: 15px 10px;
+	    line-height: 0.8;
+
+		use.notification {
+			color: $brand-dark;
+		}
+
+		span {
+			position: absolute;
+			display: block;
+			color: $white;
+			background: $brand-dark;
+			border-radius: 50%;
+			width: 14px;
+			height: 14px;
+			font-size: 9px;
+			text-align: center;
+			line-height: 1.5;
+			top: 12px;
+    		right: -1px;
+		}
 	}
 }

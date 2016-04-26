@@ -1,11 +1,16 @@
 .button {
 	display: block;
-	padding: 8px 39px;
+	padding: 8px 39px 9px;
 	text-decoration: none;
 	font-size: 14px;
 }
 
 .primary {
+	@include animate(background);
 	background: $brand-action;
 	color: $white;
+
+	&:hover {
+		background: lighten($brand-action, 3%);
+	}
 }

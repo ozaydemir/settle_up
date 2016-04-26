@@ -1,5 +1,7 @@
 @import "layout/nav";
 
+$sidebar-width: 110px;
+
 html,
 body {
 	height: 100%;
@@ -11,7 +13,9 @@ body {
 
 .sidebar-container {
 	order: 0;
-	width: 110px;
+	position: fixed;
+	width: $sidebar-width;
+	height: 100%;
 	background: $brand-dark;
 
 	ul {
@@ -22,6 +26,7 @@ body {
 .page-wrapper {
 	order: 1;
 	width: calc(100% - 110px);
+	padding-left: $sidebar-width;
 }
 
 

@@ -13,8 +13,8 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sass('app.scss')
+   	   .browserSync({proxy: 'localhost:8000'})
+   	   .svgSprite();
        //.version('css/app.css');
-
-    mix.svgSprite();
 });

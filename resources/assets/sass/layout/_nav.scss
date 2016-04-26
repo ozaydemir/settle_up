@@ -1,8 +1,5 @@
 @mixin iconColors($iconColor){
-	use.dashboard { color: $iconColor; }
-	use.products { color: $iconColor; }
-	use.shows { color: $iconColor; }
-	use.reports { color: $iconColor; }
+	use { color: $iconColor; }
 }
 
 .sidebar-nav {
