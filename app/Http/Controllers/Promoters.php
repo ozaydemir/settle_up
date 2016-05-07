@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Promoter;
 use App\Http\Requests;
 use Auth;
 
@@ -27,7 +28,7 @@ class Promoters extends Controller
      */
     public function index()
     {
-    	$promoters = \App\Promoter::paginate(10);
+    	$promoters = Promoter::where('artist_id', Auth::user()->id)->paginate(10);
 
     	return view('pages.promoters.promoters', compact('promoters'));
     }
@@ -50,7 +51,13 @@ class Promoters extends Controller
      */
     public function store(Request $request)
     {
-        return $request->all();
+        $promoter = new Promoter;
+
+        var_dump($request); die();
+
+        // $promoter->name = $request->promoter-name;
+
+        // $promoter->save();
     }
 
     /**

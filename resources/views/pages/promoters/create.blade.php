@@ -6,7 +6,9 @@
 
 	<h1>Add Promoter</h1>
 
-	<form method="POST" action="{{ URL::to('promoters/store/') }}">
+	<form method="POST" action="{{ URL::to('promoters') }}">
+
+		{{ csrf_field() }}
 		
 		<div class="form-group">
 			<label for="promoter-name">Promoter Name</label>

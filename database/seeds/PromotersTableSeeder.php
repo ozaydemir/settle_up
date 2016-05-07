@@ -17,6 +17,8 @@ class PromotersTableSeeder extends Seeder
 
         for ($i = 0; $i < $limit; $i++) {
             DB::table('promoters')->insert([ //,
+                'user_id' => 1,
+                'artist_id' => 1,
                 'promoter_name' => $faker->firstName . ' ' . $faker->lastName,
                 'promoter_email' => $faker->unique()->email,
                 'promoter_phone' => $faker->phoneNumber,

@@ -9,7 +9,7 @@
 			<a href="#" class="filter-link active">Promoters</a>
 		</div>
 		<div class="action-tools-container">
-			<a href="#" class="new-button">New Promoter</a>
+			<a href="{{ URL::to('/promoters/create') }}" class="new-button">New Promoter</a>
 			<form>
 				<input type="search" class="search-input" placeholder="Search..."/>
 				<button class="search-btn">Search</button>
